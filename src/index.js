@@ -30,9 +30,9 @@ onSnapshot(colRef, (snapshot) => {
   // console.log(books[0].title);
   let items = "";
   for (let i = 0; i < books.length; i++) {
-    items += `<tr><th scope="row" class="book-title px-6 py-4">` + books[i].title + `</th>`+
-    `<td>` + books[i].author + `</td>` +
-    `<td class="px-6 py-4">
+    items += `<tr><th scope="row" class="tr book-title">` + books[i].title + `</th>`+
+    `<td class="tr">` + books[i].author + `</td>` +
+    `<td>
     <a href="#" class="edit-item">Edit</a>
     </td></tr>`;
     console.log(books[i].title + " - " + books[i].author + " | " + books[i].id);

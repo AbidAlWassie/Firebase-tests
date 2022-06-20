@@ -37,6 +37,10 @@
     @apply text-sm text-left text-gray-500 dark:text-gray-400 mx-auto
   }
 
+  .tr {
+    @apply px-6 py-4;
+  }
+
   .book-list thead {
     @apply text-xs text-gray-300 uppercase border-gray-700 dark:bg-gray-700 dark:text-gray-400;
   }
