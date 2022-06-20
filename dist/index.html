@@ -4,10 +4,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
   <title>Firebase test</title>
 </head>
-<body>
-  <h1>I'll be doing some tests in this project</h1>
+<body class="bg-[#121212] text-white">
+  
+  <div class="container mx-auto">
+    <h1 class="heading center">I'll be doing some tests in this project</h1>
+    
+    <form action="" class="add">
+
+      <div class="form-control">
+        <label class="label" for="title">Title: </label>
+        <input class="input" type="text" name="title" required>
+      </div>
+
+      <br>
+
+      <div class="form-control">
+        <label class="label" for="author">Author: </label>
+        <input class="input" type="text" name="author" required>
+        <button class="btn">Add Book</button>
+      </div>
+      
+    </form>
+
+    <form action="" class="delete center my-4 flex-col">
+      <div class="form-control">
+        <label class="label" for="id">Document ID: </label>
+        <input class="input" type="text" name="id" required>
+        <button class="btn">Delete Book</button>
+      </div>
+    </form>
+  </div>
+
   <script src="bundle.js"></script>
 </body>
 </html>

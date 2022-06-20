@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .btn {
+    @apply py-2 px-4 bg-blue-600 rounded-md
+  }
+
+  .form-control {
+    @apply flex justify-center items-center flex-col
+  }
+
+
+  .form-control input {
+    @apply py-2 px-4 bg-gray-700 rounded-md focus:outline-none border-[3px] border-gray-700 focus:border-blue-500
+  }
+
+  .form-control label {
+    @apply my-4 text-[1.1rem] font-semibold 
+  }
+
+  .form-control .btn {
+    @apply my-6
+  }
+
+  .center {
+    @apply flex justify-center items-center mx-auto
+  }
+
+  .heading {
+    @apply text-3xl font-semibold my-6
+  }
+
+}
