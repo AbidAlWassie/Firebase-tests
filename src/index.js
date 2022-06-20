@@ -13,29 +13,32 @@ const firebaseConfig = {
 };
 
 initializeApp(firebaseConfig);
-// Collection Ref
 const db = getFirestore();
 
+// Collection Ref
 const colRef = collection(db, "books");
 
-// Get Realtime Data Collection
-// getDocs(colRef).then((snapshot) => {
-//   let books = [];
-//   snapshot.docs.forEach((doc) => {
-//     books.push({ ...doc.data(), id: doc.id })
-//   })
-//   console.log(books);
-  
-// }).catch(err => {
-//   console.log(err.message);
-// })
+// Queries
+// const q = query (colRef, where("author", "==", "Richard Dawkins"))
 
+// Get Realtime Data Collection
 onSnapshot(colRef, (snapshot) => {
   let books = [];
   snapshot.docs.forEach((doc) => {
     books.push({ ...doc.data(), id: doc.id })
   })
-  console.log(books);
+  // console.log(books[0].title);
+  let items = "";
+  for (let i = 0; i < books.length; i++) {
+    items += `<tr><th scope="row" class="book-title px-6 py-4">` + books[i].title + `</th>`+
+    `<td>` + books[i].author + `</td>` +
+    `<td class="px-6 py-4">
+    <a href="#" class="edit-item">Edit</a>
+    </td></tr>`;
+    console.log(books[i].title + " - " + books[i].author + " | " + books[i].id);
+  }
+  let bookList = document.getElementById("bookList");
+  bookList.innerHTML = items;
 })
 
 

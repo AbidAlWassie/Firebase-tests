@@ -15,19 +15,36 @@
     <form action="" class="add">
 
       <div class="form-control">
-        <label class="label" for="title">Title: </label>
+        <label class="label" for="title">Book Title: </label>
         <input class="input" type="text" name="title" required>
       </div>
 
-      <br>
-
       <div class="form-control">
-        <label class="label" for="author">Author: </label>
+        <label class="label" for="author">Author Name: </label>
         <input class="input" type="text" name="author" required>
         <button class="btn">Add Book</button>
       </div>
       
     </form>
+
+    <table class="book-list">
+      <thead>
+          <tr>
+              <th scope="col" class="px-6 py-3">
+                  Title
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Author
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  <span class="sr-only">Edit</span>
+              </th>
+          </tr>
+      </thead>
+        <tbody id="bookList">
+        </tbody>
+
+      </table>
 
     <form action="" class="delete center my-4 flex-col">
       <div class="form-control">

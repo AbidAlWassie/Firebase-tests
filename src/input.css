@@ -33,4 +33,28 @@
     @apply text-3xl font-semibold my-6
   }
 
+  .book-list {
+    @apply text-sm text-left text-gray-500 dark:text-gray-400 mx-auto
+  }
+
+  .book-list thead {
+    @apply text-xs text-gray-300 uppercase border-gray-700 dark:bg-gray-700 dark:text-gray-400;
+  }
+
+  .book-list tbody tr {
+    @apply bg-white border-b dark:bg-gray-800 dark:border-gray-700;
+  }
+
+  .book-title {
+    @apply font-medium text-gray-900 dark:text-white whitespace-nowrap;
+  }
+
+  .edit-item {
+    @apply font-medium text-blue-600 dark:text-blue-500 hover:underline;
+  }
+
+  .book-list tbody tr th {
+    @apply font-medium text-gray-900 dark:text-white whitespace-nowrap;
+  }
+
 }
