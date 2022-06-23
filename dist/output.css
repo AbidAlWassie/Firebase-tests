@@ -661,17 +661,6 @@ video {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
-@media (prefers-color-scheme: dark) {
-  .book-list {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-text-opacity));
-  }
 }
 
 .tr {
@@ -684,6 +673,8 @@ video {
 .book-list thead {
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
   font-size: 0.75rem;
   line-height: 1rem;
   text-transform: uppercase;
@@ -691,42 +682,26 @@ video {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .book-list thead {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-text-opacity));
-  }
-}
-
 .book-list tbody tr {
   border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .book-list tbody tr {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81 / var(--tw-border-opacity));
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-  }
+.book-list tbody tr:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
 .book-title {
   white-space: nowrap;
   font-weight: 500;
   --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
-@media (prefers-color-scheme: dark) {
-  .book-title {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .edit-item {
@@ -751,14 +726,7 @@ video {
   white-space: nowrap;
   font-weight: 500;
   --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
-@media (prefers-color-scheme: dark) {
-  .book-list tbody tr th {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .sr-only {
